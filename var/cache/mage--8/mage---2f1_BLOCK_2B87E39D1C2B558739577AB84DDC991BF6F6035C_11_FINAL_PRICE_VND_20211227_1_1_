@@ -1,0 +1,15 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1640620328;s:6:"expire";i:1640706728;s:4:"tags";s:46:"2f1_BLOCK_HTML,2f1_CAT_P_11,2f1_CAT_P,2f1_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="11" data-price-box="product-id-11">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+         itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <span  id="product-price-11"                data-price-amount="100000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">100.000,00 ₫</span></span>
+                <meta itemprop="price" content="100000" />
+        <meta itemprop="priceCurrency" content="VND" />
+    </span>
+
+</div>

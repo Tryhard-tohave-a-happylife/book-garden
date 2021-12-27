@@ -1,0 +1,30 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1640623328;s:6:"expire";i:1640709728;s:4:"tags";s:47:"2f1_BLOCK_HTML,2f1_CAT_P_102,2f1_CAT_P,2f1_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="102" data-price-box="product-id-102">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+         itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span class="price-label">Special Price</span>
+        <span  id="product-price-102"                data-price-amount="150000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">150.000,00 ₫</span></span>
+                <meta itemprop="price" content="150000" />
+        <meta itemprop="priceCurrency" content="VND" />
+    </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-102"                data-price-amount="290000"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+    ><span class="price">290.000,00 ₫</span></span>
+        </span>
+    </span>
+
+</div>

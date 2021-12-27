@@ -1,0 +1,16 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1640623328;s:6:"expire";i:1640626928;s:4:"tags";s:70:"2f1_BLOCK_HTML,2f1_CAT_C,2f1_CAT_C_3,2f1_CAT_C_9,2f1_CAT_C_15,2f1_MAGE";}
+
+<nav class="navigation" role="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+                    <li class="level0 level-top ">
+                <a class="level-top" href="http://bookgarden.me/">
+                    Home
+                </a>
+            </li>
+                <li  class="level0 nav-1 category-item first level-top parent"><a href="http://bookgarden.me/sach-giao-khoa.html"  class="level-top" ><span>Sách trong nước</span></a><ul class="level0 submenu"><li  class="level1 nav-1-1 category-item first"><a href="http://bookgarden.me/sach-giao-khoa/sach-van-h-c.html" ><span>Sách văn học</span></a></li><li  class="level1 nav-1-2 category-item"><a href="http://bookgarden.me/sach-giao-khoa/sach-kinh-t.html" ><span>Sách kinh tế</span></a></li><li  class="level1 nav-1-3 category-item"><a href="http://bookgarden.me/sach-giao-khoa/sach-giao-khoa.html" ><span>Sách giáo khoa</span></a></li><li  class="level1 nav-1-4 category-item"><a href="http://bookgarden.me/sach-giao-khoa/sach-l-ch-s.html" ><span>Sách lịch sử</span></a></li><li  class="level1 nav-1-5 category-item last"><a href="http://bookgarden.me/sach-giao-khoa/sach-khoa-h-c.html" ><span>Sách khoa học</span></a></li></ul></li><li  class="level0 nav-2 category-item level-top parent"><a href="http://bookgarden.me/english-books.html"  class="level-top" ><span>English Books</span></a><ul class="level0 submenu"><li  class="level1 nav-2-1 category-item first"><a href="http://bookgarden.me/english-books/art-photography.html" ><span>Art &amp; Photography</span></a></li><li  class="level1 nav-2-2 category-item"><a href="http://bookgarden.me/english-books/children-s-books.html" ><span>Children&#039;s Books</span></a></li><li  class="level1 nav-2-3 category-item"><a href="http://bookgarden.me/english-books/medical-books.html" ><span>Medical Books</span></a></li><li  class="level1 nav-2-4 category-item"><a href="http://bookgarden.me/english-books/science-technology.html" ><span>Science &amp; Technology</span></a></li><li  class="level1 nav-2-5 category-item last"><a href="http://bookgarden.me/english-books/fiction-literature.html" ><span>Fiction &amp; Literature</span></a></li></ul></li><li  class="level0 nav-3 category-item last level-top"><a href="http://bookgarden.me/tin-t-c.html"  class="level-top" ><span>Tin tức</span></a></li>    </ul>
+</nav>
+<style>
+.navigation .level0 .submenu li.parent > a::after {
+    display:none;
+}
+</style>

@@ -1,0 +1,93 @@
+<?php if ($block->getData('title')) : ?>
+  <div class="hb-wrapper above-padding below-padding" style="background: #ffffff;">
+    <div class="page-title-main">
+      <!-- <strong><?php echo $block->getData('title'); ?> </strong> -->
+    </div>
+    <div class="block-content">
+      <?php
+      $er_url = "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx?b=68";
+      $ch = curl_init();
+      curl_setopt($ch, CURLOPT_URL, $er_url);
+      curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+      curl_setopt($ch, CURLOPT_VERBOSE, true);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      $res = curl_exec($ch);
+      curl_close($ch);
+      $xml = simplexml_load_string($res);
+      $json = json_encode($xml);
+      $rs = json_decode($json, TRUE);
+      echo '<table style="width: 100%" id="currency">';
+      echo  "<thead>
+      <th>Mã tiền tệ</th>
+      <th>Tên tiền tệ</th>
+      <th>Giá mua</th>
+      <th>Giá chuyển đổi</th>
+      <th>Giá bán</th>
+      </tr></thead>";
+      ?>
+      <style>
+        table,
+        tr,
+        th,
+        td {
+          background-color: #F0F0F0;
+          border: 1px solid gray;
+          border-collapse: collapse;
+          text-align: center;
+          font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
+        th{
+          background-color: #55A516;
+          color: #ffffff;
+        }
+        .link-currency>a{
+            text-decoration: none;
+            background-color: #badc58;
+            color: #ffffff;
+            position: fixed;
+            border-radius: 5px 0px 0px 5px;
+            right: 0px;
+            top: 200px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 10px 10px 5px;
+            width: 100px;
+            z-index: 2;
+        }
+        .link-currency>a:hover{
+            background-color: #f1c40f;
+        }
+
+      </style>
+      <!-- <div class="link-currency">
+        <a href="#currency">Currency</a>
+      </div> -->
+      <?php
+      foreach ($rs["Exrate"] as $r) {
+        $r = $r["@attributes"];
+        echo "<tr>";
+        echo "<td>";
+        echo $r["CurrencyCode"];
+        echo "</td>";
+        echo "<td>";
+        echo $r["CurrencyName"];
+        echo "</td>";
+        echo "<td>";
+        echo $r["Buy"];
+        echo "</td>";
+        echo "<td>";
+        echo $r["Transfer"];
+        echo "</td>";
+        echo "<td>";
+        echo $r["Sell"];
+        echo "</td>";
+        echo "</tr>";
+      }
+      echo "</table>";
+      ?>
+    </div>
+  <?php endif; ?>
